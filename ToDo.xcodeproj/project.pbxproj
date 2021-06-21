@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31E9FAE2680D8C100562BA8 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E9FAD2680D8C100562BA8 /* AddMemoViewController.swift */; };
 		F3455EDE2680C662005F818A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3455EDD2680C662005F818A /* AppDelegate.swift */; };
 		F3455EE02680C662005F818A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3455EDF2680C662005F818A /* SceneDelegate.swift */; };
 		F3455EE22680C662005F818A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3455EE12680C662005F818A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F31E9FAD2680D8C100562BA8 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
 		F3455EDA2680C662005F818A /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3455EDD2680C662005F818A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3455EDF2680C662005F818A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				F3455EDF2680C662005F818A /* SceneDelegate.swift */,
 				F3455EE12680C662005F818A /* ViewController.swift */,
 				F3455EE32680C662005F818A /* Main.storyboard */,
+				F31E9FAD2680D8C100562BA8 /* AddMemoViewController.swift */,
 				F3455EE62680C665005F818A /* Assets.xcassets */,
 				F3455EE82680C665005F818A /* LaunchScreen.storyboard */,
 				F3455EEB2680C665005F818A /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31E9FAE2680D8C100562BA8 /* AddMemoViewController.swift in Sources */,
 				F3455EE22680C662005F818A /* ViewController.swift in Sources */,
 				F3455EDE2680C662005F818A /* AppDelegate.swift in Sources */,
 				F3455EE02680C662005F818A /* SceneDelegate.swift in Sources */,
