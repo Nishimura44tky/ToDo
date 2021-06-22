@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Z7V-zg-pVq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memoCell" id="Z7V-zg-pVq">
                                         <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z7V-zg-pVq" id="qcZ-7u-frX">
@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="Cmi-EO-VKP">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="JQg-UQ-ZXA">
                             <connections>
-                                <segue destination="5eW-WH-qCM" kind="show" id="L8J-lz-2Eq"/>
+                                <segue destination="5eW-WH-qCM" kind="show" identifier="" id="L8J-lz-2Eq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -58,12 +58,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ToDo入力,,," textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DfD-Hv-8T4">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DfD-Hv-8T4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="0.0" alpha="0.23921284454547806" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9A-lQ-zAW">
@@ -80,9 +80,11 @@
                         <viewLayoutGuide key="safeArea" id="UPf-NA-Sxo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0Sp-1C-FqH"/>
+                    <navigationItem key="navigationItem" id="0Sp-1C-FqH">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="trash" id="IFr-8N-amO"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="memoTextView" destination="DfD-Hv-8T4" id="TV0-nh-xYH"/>
+                        <outlet property="memoTextView" destination="DfD-Hv-8T4" id="a3a-Cu-R8F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXE-Ep-KDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
